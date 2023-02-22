@@ -13,7 +13,7 @@ int main(void)
 
 {
   char string[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
-  int a = 0,;
+  int a = 0;
 
   while (a < 0)
     {
