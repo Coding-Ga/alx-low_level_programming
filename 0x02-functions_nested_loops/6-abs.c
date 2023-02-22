@@ -7,7 +7,7 @@
  * value printed
  *
  * Description: this returns the absolute value
- * of the input 
+ * of the input
  *
  * Return: int
  */
