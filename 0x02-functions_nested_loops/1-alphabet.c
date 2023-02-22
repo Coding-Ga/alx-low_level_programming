@@ -3,7 +3,7 @@
 /**
  * print_alphabet - This is the main function
  *
- * Description: A function that prints lowercase alphabets 
+ * Description: A function that prints lowercase alphabets
  *
  */
 
