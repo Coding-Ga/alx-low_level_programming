@@ -4,7 +4,7 @@
 /**
  *main - Start point
  *
- *Description: A program that prints the alphabet in lowercase except q and e
+ *Description: Print the alphabeth without q and e
  *
  *Return: Always (0) Success
  *
@@ -13,27 +13,13 @@
 int main(void)
 
 {
-
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
-
-	{
-
-	putchar(c);
-
-	}
-
-
-	for (c = 'A'; c <= 'Z'; c++)
-
-	{
+	if (c != 'q' && c != 'e')
 
 	putchar(c);
-
-	}
 
 	putchar('\n');
 	return (0);
-
 }
