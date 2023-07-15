@@ -1,36 +1,38 @@
 #include <stdio.h>
+
 /**
- *main - Start point
- *
- *Description: A program that prints all combinations of two two-digit numbers.
- *
- *Return: Always (0) Success
- *
- */
+  * main - Start point for the code
+  *
+  * Return: 0 
+  */
 
 int main(void)
-
 {
-	int i, x;
+	int a = 0;
+	int b = 1;
 
-	for (i = 0; i < 9; i++)
-
+	while (a <= 98)
 	{
-		for (x = i + 1; x < 10; x++)
-
+		while (b <= 99)
 		{
-
-			putchar((i % 10) + '0');
-			putchar((x % 10) + '0');
-
-			if (i == 8 && x == 9)
-				continue;
-			putchar(',');
+			putchar((a / 10) + '0');
+			putchar((a % 10) + '0');
 			putchar(' ');
+			putchar((b / 10) + '0');
+			putchar((b % 10) + '0');
+
+			if (!(a == 98 && b == 99))
+			{
+				putchar(',');
+				putchar(' ');
+			}
+
+			b++;
 		}
+		b = a + 2;
+		a++;
 	}
 
 	putchar('\n');
 	return (0);
-
 }
