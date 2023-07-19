@@ -1,13 +1,12 @@
 #include <stdio.h>
 
-
-	/**
-	 * main - Entry Point
-	 *
-	 * Description - a program that finds, prints the first 98 Fibonacci nums
-	 *
-	 * Return:  (Success)
-	 */
+/**
+ * main - Entry Point
+ *
+ * Description - a program that finds, prints the first 98 Fibonacci nums
+ *
+ * Return:  (Success)
+ */
 
 
 	int main(void)
