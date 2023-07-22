@@ -1,28 +1,23 @@
-// Online C compiler to run C program online
 #include "main.h"
-
+#include <math.h>
+#include <stdio.h>
 /**
- * print_number - prints an integer
- * @n: integer to be printed
+ * main - Prints the largest prime factor of the number 612852475143
+ * Return: Always 0 (success)
  */
-void print_number(int n)
+int main(void)
 {
-    unsigned int n1;
-    if (n < 0)
-    {
-        n1 = -n;
-        _putchar('-');
-        
-    } else
-    {
-        n1 = n;
-        
-    }
-    if (n1 / 10)
-    {
-        print_number(n1 / 10);
-        
-    }
-    _putchar((n1 % 10) + '0');
-    
+	long x, maxf;
+	long number = 612852475143;
+	double square = sqrt(number);
+
+	for (x = 1; x <= square; x++)
+	{
+		if (number % x == 0)
+		{
+			maxf = number / x;
+		}
+	}
+	printf("%ld\n", maxf);
+	return (0);
 }
